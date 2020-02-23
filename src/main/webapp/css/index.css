@@ -1,0 +1,113 @@
+html,body{
+    height: 100%;
+    min-height: 655px;
+}
+.warp{  
+    height: 100%;
+    background-color: salmon;
+    font-size: 16px;
+}
+/* 左侧 */
+.left{
+    width: 10%;
+    height: 100%;
+    background-color: #fff;
+    float: left;
+}
+.right{
+    width: 90%;
+    height: 100%;
+    float: left;
+    background-color: #fff;
+
+}
+.logo{
+    text-align: center;    
+    height: 15%;
+    background-color: #fff;
+    padding-top: 5%;
+}
+.left .left_content{    
+    background: url(../images/bj3.jpg);
+    background-repeat: repeat-y;
+    height: 84%;
+}
+.left .left_content li a span.iconfont{
+    font-size: 32px;
+}
+.left .left_content li{    
+    text-align: center;
+}
+.left .left_content li a{    
+    display: inline-block; 
+    color: #fff;
+    font-size: 14px; 
+    padding-top: 10px;
+    height: 60px; 
+    width: 100%; 
+}
+.left .left_content li a span{   
+    display: inline-block;
+}
+.left .left_content li a em{    
+    display: inline-block;
+    width: 100%;
+    line-height: 20px;
+}
+/* 左边栏的动态效果 */
+.left .left_content a:link{
+    background-color: transparent;
+}
+.left .left_content a:visited{
+    background-color: #323f8b;
+}
+
+.left .left_content a:hover{
+    background-color: #323f8b;
+}
+.left .left_content a:active{
+    background-color: #323f8b;
+}
+.left .left_content a.active{
+    background-color: #323f8b;
+}
+/* 右侧 */
+.right .top,.bottom{
+    height: 7%;
+    width: 100%;
+    background-color: rgb(245, 250, 254);
+}
+
+.right .top .top_btn{
+    float: right;
+    text-align: center;
+    width: 150px;
+    line-height: 48px;
+}
+.right .top .top_btn button{
+    border: 0;
+    background-color: transparent;
+    padding: 0 5px;
+}
+.right .right_content{
+    height: 86%;
+}
+.right .right_content .iframe{
+    border: 0;
+    height: 100%;
+    width: 100%;
+}
+.bottom .bottom_warp{
+    text-align: center;
+    float: right;
+    width: 200px;
+    line-height: 44px;
+}
+.bottom .bottom_warp span a{ 
+    font-size: 12px;  
+    display: inline-block;
+    color: #888888;
+}
+.weather{
+    margin-top: 100px;
+}

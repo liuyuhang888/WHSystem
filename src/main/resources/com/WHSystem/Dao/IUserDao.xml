@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.WHSystem.Dao.IUserDao">
+    <select id="findAll" resultType="com.WHSystem.entity.User">
+        select * from user;
+    </select>
+    <select id="findbyId" resultType="user" parameterType="String">
+        select * from user where userId = #{userId};
+    </select>
+    <select id="findbyName" resultType="user" parameterType="String">
+        select * from user where username = #{username}
+    </select>
+    <insert id="saveUser" parameterType="user">
+        insert into user(userId,username, password, avatar) values(#{userId},#{username},#{password},#{avatar});
+    </insert>
+    <update id="updateUser" parameterType="user">
+        UPDATE user
+        <trim prefix="set" suffixOverrides=",">
+            <if test="username!=null">username=#{username},</if>
+            <if test="password!=null">password=#{password},</if>
+            <if test="avatar!=null">avatar=#{avatar},</if>
+        </trim>
+        WHERE userId=#{userId}
+    </update>
+<delete id="deleteUser" parameterType="com.WHSystem.entity.User">
+    delete from user where userId = #{userId};
+</delete>
+</mapper>

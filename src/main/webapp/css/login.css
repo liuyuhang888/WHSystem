@@ -1,0 +1,77 @@
+
+/*主体 */
+html,body{
+    height: 100%;
+}
+.logo{
+    padding-top: 10px;
+    text-align: center;    
+}
+.q-right{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10px; 
+    width: 442px;   
+    background-color: rgb(235, 233, 233);
+}
+.q-right .zuo{
+    position: absolute;
+    left: -373px;
+    width: 373px;
+    height: 381px;
+}
+.q-right .you{
+    position: absolute;
+    right: -352px;
+    width: 352px;
+    height: 381px;
+}
+.q-right .q-main{
+    width: 342px;
+    height: 360px;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+.q-right .q-main .q-p{
+    font-size: 28px;
+    margin-top: 28px;
+    margin-bottom: 34px;
+}
+.q-right .q-main .usrname,.psd,.yzm{
+    width: 300px;
+    line-height: 30px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+}
+.q-right .q-main .yzm{
+    width: 140px;
+    margin-bottom: 0px;
+}
+.q-right .q-main .usrname:hover,.psd:hover,.yzm:hover{
+    border-color: #777;
+}
+.q-right .q-main .number,.yzm{
+    margin-bottom: 8px;
+}
+.q-right .q-main .sub{
+    border: 1px #3083ff solid;
+    border-radius: 4px;
+    background-color: #3487ff;
+    box-shadow: 0 5px 8px 0 rgba(24,95,255,.1);
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    font-weight: lighter;
+    width: 338px;
+    height: 35px;
+    margin: 20px 0 8px;
+}
+.q .footer{
+    text-align: center;
+    padding: 55px 0 45px 0;
+    font-size: 14px;
+    color: rgb(51,51,51);
+}

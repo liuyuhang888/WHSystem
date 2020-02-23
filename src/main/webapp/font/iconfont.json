@@ -1,0 +1,65 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "376345",
+      "name": "个人中心",
+      "font_class": "user",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "410310",
+      "name": "统计报表",
+      "font_class": "tongjibaobiao",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "588730",
+      "name": "退出",
+      "font_class": "tuichu",
+      "unicode": "e6fc",
+      "unicode_decimal": 59132
+    },
+    {
+      "icon_id": "1297646",
+      "name": "05_库存管理",
+      "font_class": "05_kucunguanli",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "1440391",
+      "name": "系统设置",
+      "font_class": "xitongshezhi",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "2594651",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "6241652",
+      "name": "出库管理",
+      "font_class": "chukuguanli",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "6789086",
+      "name": "入库管理",
+      "font_class": "rukuguanli-",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    }
+  ]
+}

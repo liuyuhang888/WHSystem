@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.WHSystem.Dao.IProductCategoryDao">
+
+    <select id="findAll" resultType="com.WHSystem.entity.ProductCategory">
+        select * from productcategory;
+    </select>
+
+    <select id="findById" resultType="com.WHSystem.entity.ProductCategory">
+        select * from productcategory where productCategoryId = #{productCategoryId};
+    </select>
+    
+    <insert id="saveProductCategory" parameterType="com.WHSystem.entity.ProductCategory">
+       insert into productcategory(productCategoryId, productCategoryName) values (#{productCategoryId},#{productCategoryName})
+    </insert>
+
+    <update id="updateById">
+        update productcategory set productCategoryName = #{productCategoryName} where productCategoryId = #{productCategoryId};
+    </update>
+</mapper>

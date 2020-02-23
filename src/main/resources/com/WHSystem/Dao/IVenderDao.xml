@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.WHSystem.Dao.IVenderDao">
+    <select id="findAll" resultType="vender">
+    select * from vender;
+</select>
+    <select id="findById" resultType="Vender">
+    select * from vender where venderId = #{venderId};
+</select>
+    <insert id="saveVender" parameterType="com.WHSystem.entity.Vender">
+    insert into vender(venderId, venderName, venderDesc) values (#{venderId},#{venderName},#{venderDesc})
+</insert>
+    <update id="updateById" parameterType="vender">
+       update vender set venderName =#{venderName},venderDesc = #{venderDesc} where venderId = #{venderId};
+    </update>
+
+</mapper>
